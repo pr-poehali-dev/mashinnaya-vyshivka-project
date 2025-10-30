@@ -92,8 +92,8 @@ const Index = () => {
 
           <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <img
-              src="https://cdn.poehali.dev/files/c32547a6-04b3-4a9f-981e-14fa9cfdf84a.jpg"
-              alt="Вышивка на поло"
+              src="https://cdn.poehali.dev/projects/b2ae325f-796c-42e6-ae05-19045a8cd3a2/files/27a344a7-9c4a-4ebf-ae72-b6e81de17eea.jpg"
+              alt="Профессиональное вышивальное оборудование"
               className="rounded-lg shadow-2xl w-full"
             />
           </div>
@@ -138,52 +138,113 @@ const Index = () => {
 
       <section id="technologies" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Технологии и оборудование</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Технологии и оборудование</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Современный парк высокоточного оборудования для любых задач
+          </p>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="bg-card border-border overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/b2ae325f-796c-42e6-ae05-19045a8cd3a2/files/f379aa06-7f56-4a4f-9ab2-750080397c03.jpg"
+                alt="Производственный цех"
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Производственный цех</h3>
+                <p className="text-muted-foreground">
+                  Современное производство площадью 200+ кв.м с климат-контролем для стабильного качества
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/b2ae325f-796c-42e6-ae05-19045a8cd3a2/files/ad7d4276-2d0c-443e-9bbd-71f9120b1f8d.jpg"
+                alt="Процесс вышивки"
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Точность исполнения</h3>
+                <p className="text-muted-foreground">
+                  Компьютерное управление обеспечивает точность позиционирования до 0.1 мм
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon name="Cpu" className="text-primary" size={24} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Многоголовочные машины</h3>
+                <p className="text-muted-foreground text-sm">
+                  10-головочные вышивальные машины Brother и Tajima для одновременной обработки до 10 изделий
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon name="Layers" className="text-primary" size={24} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">15 игл на головку</h3>
+                <p className="text-muted-foreground text-sm">
+                  Широкая палитра цветов без остановки процесса. Автоматическая смена нитей
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon name="Gauge" className="text-primary" size={24} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Скорость до 1000 стежков/мин</h3>
+                <p className="text-muted-foreground text-sm">
+                  Высокая производительность без компромиссов по качеству
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon name="Monitor" className="text-primary" size={24} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Программное управление</h3>
+                <p className="text-muted-foreground text-sm">
+                  Профессиональное ПО Wilcom для создания и редактирования дизайнов любой сложности
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Icon name="Settings" className="text-primary" size={24} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Профессиональное оборудование</h3>
-                  <p className="text-muted-foreground">
-                    Используем современные вышивальные машины последнего поколения для точной и качественной работы
-                  </p>
-                </div>
-              </div>
+                <h3 className="text-lg font-semibold mb-2">Специализированные пяльцы</h3>
+                <p className="text-muted-foreground text-sm">
+                  Полный набор пялец для любых типов изделий: от кепок до курток
+                </p>
+              </CardContent>
+            </Card>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Shield" className="text-primary" size={24} />
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon name="Sparkles" className="text-primary" size={24} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Гарантия качества</h3>
-                  <p className="text-muted-foreground">
-                    Контроль каждого этапа производства. Высокопрочные нити, стойкость цвета, аккуратное исполнение
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Zap" className="text-primary" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Быстрое выполнение</h3>
-                  <p className="text-muted-foreground">
-                    Оперативная обработка заказов без потери качества. Сроки от 2-х дней
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-square rounded-lg bg-card border border-border flex items-center justify-center">
-                <Icon name="Cpu" className="text-primary opacity-20" size={200} />
-              </div>
-            </div>
+                <h3 className="text-lg font-semibold mb-2">Премиум нити</h3>
+                <p className="text-muted-foreground text-sm">
+                  Полиэстеровые и вискозные нити Madeira, Gunold — стойкость к стирке и выцветанию
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
